@@ -1,0 +1,44 @@
+.team-wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 4rem;
+}
+
+.team-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.team-card {
+  background: white;
+  padding: 14px;
+  border-radius: 18px;
+  box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: floatUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.team-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* offsets exactly like original */
+.float-0 { transform: translateY(0px); animation-delay: .1s; }
+.float-1 { transform: translateY(18px); animation-delay: .2s; }
+.float-2 { transform: translateY(-10px); animation-delay: .3s; }
+.float-3 { transform: translateY(25px); animation-delay: .4s; }
+.float-4 { transform: translateY(-12px); animation-delay: .5s; }
+
+@keyframes floatUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+
+

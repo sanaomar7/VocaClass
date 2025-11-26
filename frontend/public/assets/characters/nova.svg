@@ -1,0 +1,45 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="nova-bg" cx="0.2" cy="0.1" r="1">
+      <stop offset="0%" stop-color="#f97316"></stop>
+      <stop offset="40%" stop-color="#ec4899"></stop>
+      <stop offset="100%" stop-color="#a855f7"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- جسم نوفا: شكل نجمة ناعمة/blob -->
+  <path d="M60 14C70 16 78 24 84 32C92 44 100 52 98 64C96 78 86 92 72 98C60 104 46 104 36 96C26 88 20 72 22 58C24 44 32 30 42 22C48 18 52 14 60 14Z" fill="url(#nova-bg)"></path>
+
+  <!-- بقع ألوان عشوائية -->
+  <circle cx="40" cy="34" r="4" fill="#22c55e" opacity="0.85"></circle>
+  <circle cx="76" cy="30" r="3.5" fill="#facc15" opacity="0.9"></circle>
+  <circle cx="84" cy="46" r="3" fill="#38bdf8" opacity="0.9"></circle>
+
+  <!-- وجه -->
+  <circle cx="60" cy="56" r="24" fill="#fdf2ff" opacity="0.96"></circle>
+
+  <!-- عينين -->
+  <circle cx="50" cy="52" r="6.5" fill="#ffffff"></circle>
+  <circle cx="70" cy="52" r="6.5" fill="#ffffff"></circle>
+  <circle cx="50" cy="52" r="3.6" fill="#0f172a"></circle>
+  <circle cx="70" cy="52" r="3.6" fill="#0f172a"></circle>
+  <circle cx="48.8" cy="50.8" r="1.2" fill="#f9fafb"></circle>
+  <circle cx="68.8" cy="50.8" r="1.2" fill="#f9fafb"></circle>
+
+  <!-- خدود -->
+  <circle cx="46" cy="60" r="3" fill="#fb7185"></circle>
+  <circle cx="74" cy="60" r="3" fill="#fb7185"></circle>
+
+  <!-- ابتسامة واسعة -->
+  <path d="M48 64 C 54 72, 66 72, 72 64" stroke="#0f172a" stroke-width="3" fill="none" stroke-linecap="round"></path>
+
+  <!-- رِشة طلاء/فرشاة -->
+  <rect x="32" y="74" width="16" height="6" rx="3" fill="#0f172a"></rect>
+  <path d="M48 75 L58 84" stroke="#0f172a" stroke-width="4" stroke-linecap="round"></path>
+  <circle cx="60" cy="86" r="5" fill="#facc15"></circle>
+
+  <!-- شرارات إبداع حول الرأس -->
+  <path d="M60 22 L60 12" stroke="#fef3c7" stroke-width="3" stroke-linecap="round"></path>
+  <path d="M78 26 L84 18" stroke="#fef3c7" stroke-width="3" stroke-linecap="round"></path>
+  <path d="M42 26 L36 18" stroke="#fef3c7" stroke-width="3" stroke-linecap="round"></path>
+</svg>
