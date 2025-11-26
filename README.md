@@ -1,146 +1,153 @@
-# VocaClass
-Kideo – Weekly Learning Planner
+# VocaClass -- Weekly Learning Planner
 
-A full-stack mini web application built as part of the Kideo Full Stack Developer Technical Assessment.
-The solution includes a responsive landing page and a multi-step weekly learning planner with a clean, kid-friendly UI inspired by the provided Figma design.
+A full-stack web application built for the **Kideo Full Stack Developer
+Technical Assessment**.\
+Provides an interactive 3-step planner for parents to generate a
+personalized weekly learning schedule for their child.
 
-📌 Overview
+------------------------------------------------------------------------
 
-This project delivers a playful and intuitive learning-planner experience.
-It guides parents through 3 simple steps to generate a personalized weekly learning journey for their child, including age-based recommendations and app suggestions.
+## ✨ Overview
 
-Both the Front-end and Back-end are implemented with a focus on:
+VocaClass delivers a simple, clean, and friendly user experience
+designed for children and parents.\
+The project focuses on:
 
-Code clarity
+-   Clean, readable, maintainable code\
+-   Simple and scalable architecture\
+-   Reusable UI components\
+-   Clear separation between frontend & backend\
+-   Kid-friendly UI inspired by the Figma design
 
-Extensibility
+**User Journey:**
 
-Simplicity
+1.  Child Information\
+2.  Learning Goals\
+3.  Daily Routine\
+4.  Auto-generated Weekly Learning Plan
 
-Separation of concerns
+------------------------------------------------------------------------
 
-Reusable components
+## 🎨 Features
 
-Clean folder structure
+### Frontend
 
-✨ Features
-🎨 Front-end
+-   Built with **React (Vite)**
+-   Fully responsive design\
+-   Step-by-step planner flow\
+-   Entry wizard modal\
+-   Character-themed visuals\
+-   Shared UI components (chips, pills, inputs, step bar)\
+-   Live preview of the final plan
 
-Built with React (Vite)
+### Backend
 
-Fully responsive and inspired by Kideo’s playful visual style
+-   **Node.js + Express**
+-   Structured folders (Routes → Controllers → Utils)\
+-   `/api/plan` endpoint provides:
+    -   7-day goal-based learning plan\
+    -   Recommended apps\
+    -   Daily schedule suggestions\
+-   Modular backend ready for integration with a database
 
-Multi-step planner (Name → Goals → Routine)
+------------------------------------------------------------------------
 
-Character-based themes using the child’s favorite mascot
+## 🧱 Tech Stack
 
-Smooth intro modal
+### Frontend
 
-Reusable UI components (inputs, chips, pills, steps bar)
+-   React (Vite)\
+-   Custom CSS system\
+-   Material Icons
 
-Clean global CSS design system
+### Backend
 
-Real-time result preview after generating the plan
+-   Node.js\
+-   Express.js\
+-   Nodemon (dev)
 
-🛠 Back-end
+------------------------------------------------------------------------
 
-Node.js + Express server
+## 📁 Project Structure
 
-Organized into routes, controllers, and utilities
+    VocaClass/
+    │
+    ├── backend/
+    │   ├── src/
+    │   │   ├── app.js
+    │   │   ├── routes/
+    │   │   │   └── planRoutes.js
+    │   │   ├── controllers/
+    │   │   │   └── planController.js
+    │   │   ├── utils/
+    │   │   │   └── generatePlan.js
+    │   │   └── data/
+    │   │       └── apps.js
+    │   └── package.json
+    │
+    ├── frontend/
+    │   ├── src/
+    │   │   ├── components/
+    │   │   │   ├── planner/
+    │   │   │   │   ├── PlannerIntroModal.jsx
+    │   │   │   │   ├── PlannerSteps.jsx
+    │   │   │   │   ├── PlannerForm.jsx
+    │   │   │   │   └── PlannerResults.jsx
+    │   │   ├── pages/
+    │   │   │   └── PlannerPage.jsx
+    │   │   ├── styles/
+    │   │   │   └── globals.css
+    │   │   └── App.jsx
+    │   └── package.json
+    │
+    └── README.md
 
-/api/plan endpoint:
+------------------------------------------------------------------------
 
-Takes child info, goals, language, routine
+## ⚙️ Installation
 
-Generates a 7-day personalized plan
+### 1. Clone the repository
 
-Provides recommended activities and apps
+    git clone https://github.com/sanaomar7/VocaClass.git
+    cd VocaClass
 
-Modular structure ready for future database integration
+### 2. Install backend
 
-🧱 Tech Stack
-Frontend
+    cd backend
+    npm install
 
-React (Vite)
+### 3. Install frontend
 
-CSS (Custom design system)
+    cd ../frontend
+    npm install
 
-Material Icons / Emoji
+------------------------------------------------------------------------
 
-Backend
+## 🚀 Running the Project
 
-Node.js
+### Backend
 
-Express.js
+    cd backend
+    npm run dev
 
-Nodemon (Dev mode)
+Runs at: **http://localhost:4000**
 
-📁 Project Structure
-kideo-task/
-│
-├── backend/
-│   ├── src/
-│   │   ├── app.js
-│   │   ├── routes/
-│   │   │   └── planRoutes.js
-│   │   ├── controllers/
-│   │   │   └── planController.js
-│   │   ├── utils/
-│   │   │   └── generatePlan.js
-│   │   └── data/
-│   │       └── apps.js
-│   └── package.json
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── planner/
-│   │   │   │   ├── PlannerIntroModal.jsx
-│   │   │   │   ├── PlannerSteps.jsx
-│   │   │   │   ├── PlannerForm.jsx
-│   │   │   │   └── PlannerResults.jsx
-│   │   ├── pages/
-│   │   │   └── PlannerPage.jsx
-│   │   ├── styles/
-│   │   │   └── globals.css
-│   │   └── App.jsx
-│   └── package.json
-│
-└── README.md
+### Frontend
 
-⚙️ Installation
-Clone the repository
-git clone https://github.com/sanaomar7/VocaClass.git
-cd VocaClass
+    cd frontend
+    npm run dev
 
-Install backend
-cd backend
-npm install
+Runs at: **http://localhost:5173**
 
-Install frontend
-cd ../frontend
-npm install
+------------------------------------------------------------------------
 
-🚀 Running the Project
-Backend
-cd backend
-npm run dev
+## 📡 API -- Weekly Plan Generation
 
+### POST `/api/plan`
 
-Runs on:
-http://localhost:4000
+#### Request Example
 
-Frontend
-cd frontend
-npm run dev
-
-
-Runs on:
-http://localhost:5173
-
-📡 API Endpoint
-POST /api/plan
-Request Body
+``` json
 {
   "nickname": "John",
   "ageRange": "3-5",
@@ -152,58 +159,45 @@ Request Body
     "evening": true
   }
 }
+```
 
-Response
+#### Response Example
+
+``` json
 {
   "plan": {
-    "days": [...],
-    "goals": [...],
-    "apps": [...]
+    "days": [],
+    "goals": [],
+    "apps": []
   }
 }
+```
 
-🎨 Design Notes
+------------------------------------------------------------------------
 
-Visual system based on soft gradients, rounded shapes, and child-safe colors.
+## 🎨 Design Guidelines
 
-Inputs, selects, chips, and fields use one unified design system.
+-   Soft gradients and rounded UI elements\
+-   Kid-friendly color palette\
+-   Clear spacing and layout\
+-   Reusable design tokens\
+-   Simple grid-based structure\
+-   Friendly onboarding wizard
 
-Layouts follow a clean grid structure for readability.
+------------------------------------------------------------------------
 
-Planner modal uses a friendly, motivating introduction flow.
+## 🧩 Future Extensibility
 
-🧩 Extensibility
+-   More characters\
+-   Database integration\
+-   Multi-language UI\
+-   Admin dashboard\
+-   User authentication\
+-   More advanced recommendation engine
 
-The codebase is structured to easily support:
+------------------------------------------------------------------------
 
-Additional characters or themes
+## 🙌 Thank You
 
-Saving user plans to a database
-
-Multi-language UI
-
-Admin panel for app/goal management
-
-Authentication & user accounts
-
-API expansion for more personalized recommendations
-
-📝 Notes
-
-The project follows the requirements provided in the assessment:
-
-Clean coding practices
-
-Clear and simple architecture
-
-Functional front-end + back-end
-
-No external dependencies beyond React/Express to keep the task simple and maintainable.
-
-🙌 Thank You
-
-Thank you for reviewing this submission.
-If you have any questions or would like clarification on any part of the implementation, feel free to reach out.
-
-Created with love :
-Sana Eid
+Thank you for taking the time to review this project.\
+Created with ❤️ --- **Sana Eid**
