@@ -211,7 +211,6 @@ Created with ❤️ --- **Sana Eid**
 <img width="1852" height="890" alt="image" src="https://github.com/user-attachments/assets/605a2d8d-6157-4d9e-ac1a-ace662adcffb" />
 <img width="1852" height="890" alt="image" src="https://github.com/user-attachments/assets/6982249d-836b-41d6-b9d3-07d8f71ff9cd" />
 
-<img width="1859" height="897" alt="image" src="https://github.com/user-attachments/assets/e488a9af-539c-46b6-b32f-036453ad0547" />
 <img width="1859" height="897" alt="image" src="https://github.com/user-attachments/assets/17794bf3-5453-4d8a-9f61-60ab990e8e6f" />
 <img width="1849" height="897" alt="image" src="https://github.com/user-attachments/assets/c0f107d4-d991-4e8f-9050-ff1563613192" />
 
